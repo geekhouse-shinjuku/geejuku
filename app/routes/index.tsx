@@ -1,18 +1,26 @@
-import { css } from 'hono/css'
-import { createRoute } from 'honox/factory'
-import Counter from '../islands/counter'
+import { css } from "hono/css";
+import { createRoute } from "honox/factory";
+import MainNav from "../islands/onboarding/main-nav";
+import Header from "../islands/onboarding/header";
+import Info from "../islands/onboarding/info";
+import Detail from "../islands/onboarding/detail";
+import GeejukuMap from "../islands/onboarding/geejuku-map";
+import Footer from "../islands/onboarding/footer";
 
 const className = css`
   font-family: sans-serif;
-`
+`;
 
 export default createRoute((c) => {
-  const name = c.req.query('name') ?? 'Hono'
   return c.render(
     <div class={className}>
-      <h1>Hello, {name}!</h1>
-      <Counter />
+      <MainNav />
+      <Header />
+      <Info />
+      <Detail />
+      <GeejukuMap />
+      <Footer />
     </div>,
-    { title: name }
-  )
-})
+    { title: "ギークハウス新宿 - ときさば系ギークハウス" }
+  );
+});
