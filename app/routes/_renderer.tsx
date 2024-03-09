@@ -28,9 +28,6 @@ export default jsxRenderer(({ children, title }) => {
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
         />
 
-        <link href="/static/style.css" rel="stylesheet" />
-        <Style>{css``}</Style>
-
         <Script src="/app/client.ts" async />
         <Style />
       </head>
