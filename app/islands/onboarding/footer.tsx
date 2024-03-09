@@ -70,12 +70,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://enginemaker.space/geekhouse-shinjuku.html"
-                  target="_blank"
-                >
-                  ギークハウス新宿
-                </a>
+                <a href="#">ギークハウス新宿</a>
               </li>
               <li>
                 <a
