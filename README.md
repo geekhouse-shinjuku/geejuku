@@ -2,7 +2,7 @@
 
 ぎーじゅく（ギークハウス新宿）の紹介用LPのサイトです。
 
-Hono + Cloudflare Pagesでホスティングしています。
+Hono + vite + Cloudflare Pagesでホスティングしています。
 
 ### 予定地
 [https://lp.geejuku.tokyo](https://lp.geejuku.tokyo)
