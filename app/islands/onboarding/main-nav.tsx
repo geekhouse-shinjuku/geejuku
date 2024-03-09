@@ -14,8 +14,8 @@ export default function MainNav() {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand page-scroll" href="index.html">
-            ときさば系ギークハウス
+          <a class="navbar-brand page-scroll" href="/">
+            ぎーじゅく@渋谷、新宿のシェアハウス
           </a>
         </div>
 
@@ -29,16 +29,6 @@ export default function MainNav() {
             <li>
               <a class="page-scroll" href="#map">
                 所在地
-              </a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#residence">
-                物件一覧
-              </a>
-            </li>
-            <li>
-              <a class="navbar-brand page-scroll" href="#page-top">
-                ページトップへ
               </a>
             </li>
           </ul>

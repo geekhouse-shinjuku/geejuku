@@ -103,7 +103,7 @@ export default function Detail() {
             <div class="col-lg-9">
               <div class="row">
                 <div class="col-xs-6">
-                  ドミトリー家賃 :<strong>55,000円</strong>
+                  ドミトリー家賃 :<strong>60,000円</strong>
                 </div>
                 <div class="col-xs-6">
                   共益費：
@@ -111,7 +111,11 @@ export default function Detail() {
                 </div>
                 <div class="col-xs-6">
                   デポジット：
-                  <strong>55,000円</strong>
+                  <strong>60,000円</strong>
+                </div>
+                <div class="col-xs-6">
+                  退去時クリーニング代：
+                  <strong>5,000円</strong>
                 </div>
                 <div class="col-xs-6">
                   割引：
