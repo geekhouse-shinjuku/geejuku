@@ -92,19 +92,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="col-lg-3">
-            <h3 class="h4">ときさば系物件(海外)</h3>
-            <ul class="list-unstyled">
-              <li>
-                <a
-                  href="https://www.facebook.com/geekhousesaigon/"
-                  target="_blank"
-                >
-                  ギークハウスサイゴン＠ベトナム
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
         <hr />
         <div class="row">
@@ -129,7 +116,7 @@ export default function Footer() {
           </ul>
         </div>
         <div class="row text-center text-muted">
-          &copy; ときさば系シェアハウス
+          &copy; ぎーじゅく@渋谷、新宿のシェアハウス
         </div>
       </div>
     </footer>
