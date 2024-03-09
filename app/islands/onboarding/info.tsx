@@ -5,7 +5,7 @@ export default function Info() {
         <div class="row">
           <div class="col-lg-2 col-lg-offset-1 text-center">
             <img
-              src="/app/assets/profile-uenu.jpg"
+              src="/static/assets/profile-uenu.jpg"
               alt="管理人うえぬ"
               class="img-circle"
               width="115"

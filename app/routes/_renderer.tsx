@@ -10,7 +10,7 @@ export default jsxRenderer(({ children, title }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title}</title>
 
-        <link href="/app/bootstrap.min.css" rel="stylesheet" />
+        <link href="/static/bootstrap.min.css" rel="stylesheet" />
 
         <link
           href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
@@ -27,7 +27,7 @@ export default jsxRenderer(({ children, title }) => {
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
         />
 
-        <link href="/app/style.css" rel="stylesheet" />
+        <link href="/static/style.css" rel="stylesheet" />
 
         <Script src="/app/client.ts" async />
         <Style />
