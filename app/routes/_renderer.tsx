@@ -8,6 +8,7 @@ export default jsxRenderer(({ children, title }) => {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta robots="noindex, nofollow" />
         <title>{title}</title>
 
         <link href="/static/bootstrap.min.css" rel="stylesheet" />
@@ -28,8 +29,7 @@ export default jsxRenderer(({ children, title }) => {
         />
 
         <link href="/static/style.css" rel="stylesheet" />
-        <Style>{css`
-        `}</Style>
+        <Style>{css``}</Style>
 
         <Script src="/app/client.ts" async />
         <Style />
