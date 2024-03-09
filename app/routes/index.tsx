@@ -21,6 +21,6 @@ export default createRoute((c) => {
       <GeejukuMap />
       <Footer />
     </div>,
-    { title: "ギークハウス新宿 - ときさば系ギークハウス" }
+    { title: "ぎーじゅく@渋谷、新宿を拠点としたギークハウス" }
   );
 });
