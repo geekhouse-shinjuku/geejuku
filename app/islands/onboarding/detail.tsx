@@ -1,6 +1,19 @@
+import { Style, css } from "hono/css";
+
 export default function Detail() {
   return (
     <section class="bg-gray bordered geekhouse" id="about">
+      <Style>
+        {css`
+          .bg-gray {
+            background-color: #f5f5f5;
+          }
+          .bordered {
+            border-top: 1px solid #dbdbdb;
+            border-bottom: 1px solid #dbdbdb;
+          }
+        `}
+      </Style>
       <div class="container">
         <div class="col-lg-8 col-lg-offset-1">
           <div class="row">
@@ -62,10 +75,10 @@ export default function Detail() {
                   <i class="fa fa-lg fa-television"></i> テレビ、プロジェクタ
                 </div>
                 <div class="col-xs-6">
-                  <i class="fa fa-lg fa-gamepad"></i> XBox360
+                  <i class="fa fa-lg fa-gamepad"></i> Nintendo Switch
                 </div>
                 <div class="col-xs-6">
-                  <i class="fa fa-lg fa-gamepad"></i> Wii U
+                  <i class="fa fa-lg fa-coffee"></i> エスプレッソマシン
                 </div>
                 <div class="col-xs-6">
                   <i class="fa fa-lg fa-pencil"></i> 裁断機

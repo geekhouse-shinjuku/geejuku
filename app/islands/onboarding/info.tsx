@@ -1,6 +1,137 @@
+import { Style, css } from "hono/css";
 export default function Info() {
   return (
     <section class="geekhouse">
+      <Style>{css`
+        .geekhouse {
+          padding: 1em 0;
+
+          .row {
+            padding: 16px 0;
+          }
+
+          h2 {
+            margin-top: 0px;
+          }
+
+          .btn-twitter {
+            border-color: #55acee;
+            color: #fff;
+            background-color: #55acee;
+            -webkit-transition: all 0.35s;
+            -moz-transition: all 0.35s;
+            transition: all 0.35s;
+          }
+
+          .btn-twitter:hover,
+          .btn-twitter:focus,
+          .btn-twitter.focus,
+          .btn-twitter:active,
+          .btn-twitter.active,
+          .open > .dropdown-toggle.btn-twitter {
+            border-color: #55acee;
+            color: #fff;
+            background-color: #489fe1;
+          }
+
+          .btn-twitter:active,
+          .btn-twitter.active,
+          .open > .dropdown-toggle.btn-twitter {
+            background-image: none;
+          }
+
+          .btn-twitter.disabled,
+          .btn-twitter[disabled],
+          fieldset[disabled] .btn-twitter,
+          .btn-twitter.disabled:hover,
+          .btn-twitter[disabled]:hover,
+          fieldset[disabled] .btn-twitter:hover,
+          .btn-twitter.disabled:focus,
+          .btn-twitter[disabled]:focus,
+          fieldset[disabled] .btn-twitter:focus,
+          .btn-twitter.disabled.focus,
+          .btn-twitter[disabled].focus,
+          fieldset[disabled] .btn-twitter.focus,
+          .btn-twitter.disabled:active,
+          .btn-twitter[disabled]:active,
+          fieldset[disabled] .btn-twitter:active,
+          .btn-twitter.disabled.active,
+          .btn-twitter[disabled].active,
+          fieldset[disabled] .btn-twitter.active {
+            border-color: #55acee;
+            background-color: #55acee;
+          }
+
+          .btn-twitter .badge {
+            color: #55acee;
+            background-color: #fff;
+          }
+
+          .contact a,
+          .contact a:hover,
+          .contact a:visited {
+            color: #fff;
+            text-decoration: none;
+          }
+
+          .contact button {
+            margin-bottom: 5px;
+          }
+
+          .btn-facebook {
+            border-color: #3b5998;
+            color: #fff;
+            background-color: #3b5998;
+            -webkit-transition: all 0.35s;
+            -moz-transition: all 0.35s;
+            transition: all 0.35s;
+          }
+
+          .btn-facebook:hover,
+          .btn-facebook:focus,
+          .btn-facebook.focus,
+          .btn-facebook:active,
+          .btn-facebook.active,
+          .open > .dropdown-toggle.btn-facebook {
+            border-color: #3b5998;
+            color: #fff;
+            background-color: #2e4c8b;
+          }
+
+          .btn-facebook:active,
+          .btn-facebook.active,
+          .open > .dropdown-toggle.btn-facebook {
+            background-image: none;
+          }
+
+          .btn-facebook.disabled,
+          .btn-facebook[disabled],
+          fieldset[disabled] .btn-facebook,
+          .btn-facebook.disabled:hover,
+          .btn-facebook[disabled]:hover,
+          fieldset[disabled] .btn-facebook:hover,
+          .btn-facebook.disabled:focus,
+          .btn-facebook[disabled]:focus,
+          fieldset[disabled] .btn-facebook:focus,
+          .btn-facebook.disabled.focus,
+          .btn-facebook[disabled].focus,
+          fieldset[disabled] .btn-facebook.focus,
+          .btn-facebook.disabled:active,
+          .btn-facebook[disabled]:active,
+          fieldset[disabled] .btn-facebook:active,
+          .btn-facebook.disabled.active,
+          .btn-facebook[disabled].active,
+          fieldset[disabled] .btn-facebook.active {
+            border-color: #3b5998;
+            background-color: #3b5998;
+          }
+
+          .btn-facebook .badge {
+            color: #3b5998;
+            background-color: #fff;
+          }
+        }
+      `}</Style>
       <div class="container">
         <div class="row">
           <div class="col-lg-2 col-lg-offset-1 text-center">

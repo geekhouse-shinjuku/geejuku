@@ -1,6 +1,13 @@
+import { Style, css } from "hono/css";
+
 export default function GeejukuMap() {
   return (
     <section class="map">
+      <Style>{css`
+        .map {
+          padding: 60px 0;
+        }
+      `}</Style>
       <div id="map"></div>
       <div class="map-card">
         <div class="text-center">ギークハウス新宿</div>

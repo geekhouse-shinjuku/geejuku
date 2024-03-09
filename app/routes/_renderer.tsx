@@ -1,4 +1,4 @@
-import { Style } from "hono/css";
+import { Style, css } from "hono/css";
 import { jsxRenderer } from "hono/jsx-renderer";
 import { Script } from "honox/server";
 
@@ -28,6 +28,8 @@ export default jsxRenderer(({ children, title }) => {
         />
 
         <link href="/static/style.css" rel="stylesheet" />
+        <Style>{css`
+        `}</Style>
 
         <Script src="/app/client.ts" async />
         <Style />

@@ -1,6 +1,29 @@
+import { Style, css } from "hono/css";
+
 export default function Footer() {
   return (
     <footer>
+      <Style>{css`
+        footer {
+          padding: 50px 0;
+          background-color: #2b2d2e;
+          color: #fff;
+        }
+
+        footer .h4 {
+          margin-top: 0;
+        }
+        footer a,
+        footer a:hover,
+        footer a:visited {
+          color: #fff;
+        }
+
+        footer a:hover {
+          text-decoration: none;
+          opacity: 0.5;
+        }
+      `}</Style>
       <div class="container">
         <div class="row">
           <div class="col-lg-3"></div>
