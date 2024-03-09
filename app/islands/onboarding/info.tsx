@@ -198,7 +198,7 @@ export default function Info() {
             <div class="text-muted">うえぬ</div>
           </div>
           <div class="col-lg-6">
-            <h2 class="h3">ぎーじゅく（旧ギークハウス新宿）</h2>
+            <h2 class="h3">ぎーじゅく（ギークハウス新宿）</h2>
             <p>東京都渋谷区代々木, 日本 </p>
             <div class="row">
               <div class="col-xs-3 text-center">
