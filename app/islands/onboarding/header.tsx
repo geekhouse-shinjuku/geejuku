@@ -5,6 +5,7 @@ export default function Header() {
     <header id="shinjuku">
       <Style>{css`
         header {
+          margin-top: 50px;
           position: relative;
           width: 100%;
           min-height: auto;
@@ -15,6 +16,7 @@ export default function Header() {
           -moz-background-size: cover;
           background-size: cover;
           -o-background-size: cover;
+          min-height: 300px;
         }
 
         @media (min-width: 768px) {
@@ -32,6 +34,7 @@ export default function Header() {
           <h1 class="hide">ギークハウス新宿</h1>
         </div>
       </div>
+      <script></script>
     </header>
   );
 }

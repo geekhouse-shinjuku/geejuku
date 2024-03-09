@@ -12,6 +12,7 @@ export default jsxRenderer(({ children, title }) => {
         <title>{title}</title>
 
         <link href="/static/bootstrap.min.css" rel="stylesheet" />
+        <link rel="icon" href="/static/favicon.jpg" type="image/jpeg" />
 
         <link
           href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
@@ -32,11 +33,8 @@ export default jsxRenderer(({ children, title }) => {
         <Style />
       </head>
       <body>{children}</body>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"
-      ></script>
+      <script src="/static/jquery.js" />
+      <script src="/static/bootstrap.min.js" />
     </html>
   );
 });
