@@ -130,6 +130,59 @@ export default function Info() {
             color: #3b5998;
             background-color: #fff;
           }
+
+          .btn-connpass {
+            border-color: #c23123;
+            color: #fff;
+            background-color: #c23123;
+            -webkit-transition: all 0.35s;
+            -moz-transition: all 0.35s;
+            transition: all 0.35s;
+          }
+
+          .btn-connpass:hover,
+          .btn-connpass:focus,
+          .btn-connpass.focus,
+          .btn-connpass:active,
+          .btn-connpass.active,
+          .open > .dropdown-toggle.btn-connpass {
+            border-color: #a32a1b;
+            color: #fff;
+            background-color: #a32a1b;
+          }
+
+          .btn-connpass:active,
+          .btn-connpass.active,
+          .open > .dropdown-toggle.btn-connpass {
+            background-image: none;
+          }
+
+          .btn-connpass.disabled,
+          .btn-connpass[disabled],
+          fieldset[disabled] .btn-connpass,
+          .btn-connpass.disabled:hover,
+          .btn-connpass[disabled]:hover,
+          fieldset[disabled] .btn-connpass:hover,
+          .btn-connpass.disabled:focus,
+          .btn-connpass[disabled]:focus,
+          fieldset[disabled] .btn-connpass:focus,
+          .btn-connpass.disabled.focus,
+          .btn-connpass[disabled].focus,
+          fieldset[disabled] .btn-connpass.focus,
+          .btn-connpass.disabled:active,
+          .btn-connpass[disabled]:active,
+          fieldset[disabled] .btn-connpass:active,
+          .btn-connpass.disabled.active,
+          .btn-connpass[disabled].active,
+          fieldset[disabled] .btn-connpass.active {
+            border-color: #a32a1b;
+            background-color: #a32a1b;
+          }
+
+          .btn-connpass .badge {
+            color: #3b5998;
+            background-color: #fff;
+          }
         }
       `}</Style>
       <div class="container">
@@ -180,6 +233,11 @@ export default function Info() {
             <a href="https://www.facebook.com/geejuku/" target="_blank">
               <button type="button" class="btn btn-block btn-facebook">
                 Facebook
+              </button>
+            </a>
+            <a href="https://geejuku.connpass.com/" target="_blank">
+              <button type="button" class="btn btn-block btn-connpass">
+                イベント情報(connpass)
               </button>
             </a>
           </div>
