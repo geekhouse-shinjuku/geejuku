@@ -189,13 +189,13 @@ export default function Info() {
         <div class="row">
           <div class="col-lg-2 col-lg-offset-1 text-center">
             <img
-              src="/static/assets/profile-uenu.jpg"
-              alt="管理人うえぬ"
+              src="/static/assets/geejuku-logo.jpg"
+              alt="ぎーじゅくロゴ"
               class="img-circle"
               width="115"
               hegiht="115"
             />
-            <div class="text-muted">うえぬ</div>
+            <div class="text-muted">ぎーじゅく</div>
           </div>
           <div class="col-lg-6">
             <h2 class="h3">ぎーじゅく（ギークハウス新宿）</h2>
