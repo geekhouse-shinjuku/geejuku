@@ -111,7 +111,7 @@ export default function Footer() {
           </ul>
         </div>
         <div class="row text-center text-muted">
-          &copy; ぎーじゅく@渋谷、新宿のシェアハウス
+          &copy; ぎーじゅく@渋谷・新宿のシェアハウス
         </div>
       </div>
     </footer>

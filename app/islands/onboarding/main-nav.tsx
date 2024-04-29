@@ -15,7 +15,7 @@ export default function MainNav() {
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand page-scroll" href="/">
-            ぎーじゅく@渋谷、新宿のシェアハウス
+            ぎーじゅく@渋谷・新宿のシェアハウス
           </a>
         </div>
 
