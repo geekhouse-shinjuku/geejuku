@@ -22,13 +22,13 @@ export default function MainNav() {
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a class="page-scroll" href="#about">
-                このギークハウスについて
+              <a class="page-scroll" href="/">
+                ブログ
               </a>
             </li>
             <li>
-              <a class="page-scroll" href="#map">
-                所在地
+              <a class="page-scroll" href="/about">
+                このギークハウスについて
               </a>
             </li>
           </ul>

@@ -5,16 +5,33 @@
     "dev": "vite",
     "build": "vite build --mode client && vite build",
     "preview": "wrangler pages dev ./dist",
-    "deploy": "$npm_execpath run build && wrangler pages deploy ./dist"
+    "deploy": "$npm_execpath run build && wrangler pages deploy ./dist",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
+    "lint:fix": "biome check --apply .",
+    "check": "biome check --apply .",
+    "check:ci": "biome ci .",
+    "typecheck": "tsc -p . --noEmit",
+    "create:post": "node ./app/libs/posts/generate-post.mjs"
   },
   "private": true,
   "dependencies": {
+    "@mdx-js/rollup": "^3.0.1",
+    "highlight.js": "^11.9.0",
     "hono": "^4.0.9",
-    "honox": "^0.1.4"
+    "honox": "^0.1.9",
+    "remark-frontmatter": "^5.0.0",
+    "remark-mdx-frontmatter": "^4.0.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.6.4",
     "@cloudflare/workers-types": "^4.20240208.0",
-    "@hono/vite-cloudflare-pages": "^0.2.4",
+    "@hono/vite-cloudflare-pages": "^0.2.5",
+    "@hono/vite-ssg": "^0.1.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "rehype-highlight": "^7.0.0",
+    "tailwindcss": "^3.4.3",
     "vite": "^5.2.10",
     "wrangler": "^3.31.0"
   }

@@ -25,7 +25,7 @@ export default function Footer() {
         }
       `}</Style>
       <div class="container">
-        <div class="row">
+        <div class="row pb-12">
           <div class="col-lg-3"></div>
           <div class="col-lg-3">
             <h3 class="h4">ギークハウスプロジェクト</h3>
@@ -88,7 +88,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <hr />
+        <hr class="py-4" />
         <div class="row">
           <h3 class="h4 text-center">連絡先</h3>
           <ul class="list-unstyled list-inline text-center">
