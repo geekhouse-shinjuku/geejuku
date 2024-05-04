@@ -1,4 +1,9 @@
 import SnsButtons from "./contact-buttons";
+import Amenities from "./detail-items/amenities";
+import Pricing from "./detail-items/pricing";
+import PropertyDetail from "./detail-items/property-details";
+import RecommendedRequirements from "./detail-items/recommended-requirements";
+import RequiredRequirements from "./detail-items/required-requirements";
 
 export const SideBar = () => {
   return (
@@ -16,7 +21,6 @@ export const SideBar = () => {
       <SnsButtons />
 
       <div class="flex flex-col">
-        <hr />
         <h3 class="h4 text-muted">物件内容</h3>
         <div>
           間取り： <strong>5LDK</strong>

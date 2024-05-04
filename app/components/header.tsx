@@ -2,39 +2,18 @@ import { Style, css } from "hono/css";
 
 export default function Header() {
   return (
-    <header id="shinjuku">
+    <header
+      id="shinjuku-header"
+      class="relative w-full text-center text-white bg-center bg-cover min-h-[260px] md:min-h-[360px]"
+    >
       <Style>{css`
-        header {
-          margin-top: 50px;
-          position: relative;
-          width: 100%;
-          min-height: auto;
-          text-align: center;
-          color: #fff;
-          background-position: center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          background-size: cover;
-          -o-background-size: cover;
-          min-height: 260px;
-        }
-
-        @media (min-width: 768px) {
-          header {
-            min-height: 260px;
-          }
-        }
-
-        #shinjuku {
+        #shinjuku-header {
           background-image: url(/static/assets/header-geejuku2.png);
         }
       `}</Style>
       <div class="header-content">
-        <div class="header-content-inner">
-          <h1 class="hide">ギークハウス新宿</h1>
-        </div>
+        <div class="header-content-inner"></div>
       </div>
-      <script></script>
     </header>
   );
 }

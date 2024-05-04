@@ -1,53 +1,35 @@
 import { jsxRenderer } from "hono/jsx-renderer";
-import MainNav from "../../components/main-nav";
+import MainNav from "../../islands/main-nav";
 import Header from "../../components/header";
 import { SideBar } from "../../components/sidebar";
-import { css } from "hono/css";
+import Footer from "../../components/footer";
+import HeaderSp from "../../components/header-sp";
 
-const className = css`
-  #inner-container {
-    display: grid;
-    grid-template-columns: 720px 6px 320px;
-    gap: 10px;
-    margin: 0 auto;
-  }
-
-  /* スマートフォン向けのスタイル */
-  @media screen and (max-width: 767px) {
-    #inner-container {
-      grid-template-columns: 1fr; /* 1列にスタック */
-    }
-
-    .border {
-      display: none; /* ボーダーを非表示に */
-    }
-
-    .main,
-    .sidebar {
-      width: auto; /* 横幅いっぱいに広げる */
-    }
-  }
-`;
 export default jsxRenderer(({ children, Layout, frontmatter }) => {
   const _title = `${frontmatter?.title} | Blog Name`;
 
   return (
     <Layout title={_title} description={frontmatter?.description}>
-      <div class={className}>
-        <MainNav />
+      <MainNav />
+      <div class="hidden md:block">
         <Header />
-        <div class="container">
-          <div id="inner-container">
-            <div class="main px-6">
-              <div class="markdown">{children}</div>
-            </div>
-            <div class="my-6 border-l border-gray-200"></div>
-            <div class="sidebar px-4">
-              <SideBar />
-            </div>
+      </div>
+      <div class="block md:hidden">
+        <HeaderSp />
+      </div>
+      <div class="container mx-auto">
+        <div class="inner-container">
+          <div class="main px-6 py-12">
+            <div class="text-zinc-500">{frontmatter?.date} </div>
+            <div class="markdown">{children}</div>
+          </div>
+          <div class="my-6 border-l border-zinc-200"></div>
+          <div class="sidebar px-4">
+            <SideBar />
           </div>
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 });

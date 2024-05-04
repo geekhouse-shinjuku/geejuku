@@ -6,15 +6,27 @@ html {
   font-size: 16px !important;
 }
 
-.main-container {
+.inner-container {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
-  min-height: 100vh;
+  grid-template-columns: 920px 6px 320px;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .inner-container {
+    grid-template-columns: 1fr; /* 1列にスタック */
+  }
+
+  .main,
+  .sidebar {
+    width: auto; /* 横幅いっぱいに広げる */
+  }
 }
 
 .markdown {
-  @apply text-gray-900 leading-normal break-words;
+  @apply text-zinc-900 leading-normal break-words;
+  width: 100%;
 }
 
 .markdown > * + * {
@@ -42,7 +54,7 @@ html {
 }
 
 .markdown h1 {
-  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-5 pb-2;
 }
 
 .markdown h2 {
@@ -62,23 +74,23 @@ html {
 }
 
 .markdown h6 {
-  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-6;
+  @apply leading-tight text-sm font-semibold text-zinc-600 mb-4 mt-6;
 }
 
 .markdown blockquote {
-  @apply text-base border-l-4 border-gray-200 pl-4 pr-4 text-gray-600;
+  @apply text-base border-l-4 border-zinc-200 pl-4 pr-4 text-zinc-600;
 }
 
 .markdown code {
-  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-[2px];
+  @apply font-mono text-sm inline bg-zinc-200 rounded px-1 py-[2px];
 }
 
 .markdown pre {
-  @apply bg-gray-100 rounded p-4;
+  @apply bg-zinc-100 rounded p-4;
 }
 
 .markdown pre code {
-  @apply block bg-transparent p-0 overflow-visible rounded-none;
+  @apply block bg-transparent p-0 rounded-none whitespace-pre-wrap;
 }
 
 .markdown ul {
@@ -94,7 +106,7 @@ html {
 }
 
 .markdown table {
-  @apply text-base border-gray-600;
+  @apply text-base border-zinc-600;
 }
 
 .markdown th {
@@ -107,5 +119,9 @@ html {
 
 /* Override pygments style background color. */
 .markdown .highlight pre {
-  @apply bg-gray-100 !important;
+  @apply bg-zinc-100 !important;
+}
+
+.bg-dark {
+  background-color: #2b2d2e;
 }
