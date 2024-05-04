@@ -23,7 +23,7 @@ export default function GeejukuMap() {
         </div>
       </div>
       <br />
-      <div class="text-center">
+      <div class="flex justify-center">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.6917887939085!2d139.69454447578784!3d35.68459037258628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cce6ced4c41%3A0x722cc5507d33cce!2z44Ku44O844Kv44OP44Km44K55paw5a6_!5e0!3m2!1sja!2sjp!4v1709967325008!5m2!1sja!2sjp"
           height="450"

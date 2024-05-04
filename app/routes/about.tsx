@@ -2,48 +2,14 @@ import { css } from "hono/css";
 import { createRoute } from "honox/factory";
 import MainNav from "../islands/main-nav";
 import Header from "../islands/header";
+import Info from "../islands/info";
+import Detail from "../islands/detail";
+import GeejukuMap from "../islands/geejuku-map";
 import Footer from "../islands/footer";
 import { FC } from "hono/jsx";
-import { SideBar } from "../islands/sidebar";
 
 const className = css`
   font-family: sans-serif;
-
-  #inner-container {
-    display: grid;
-    grid-template-columns: 680px 6px 320px;
-    gap: 10px;
-    margin: 0 auto;
-  }
-
-  .main {
-    background-color: lightblue;
-    padding: 20px;
-  }
-
-  .border {
-    border-left: 1px solid black;
-  }
-
-  .sidebar {
-    padding: 20px;
-  }
-
-  /* スマートフォン向けのスタイル */
-  @media screen and (max-width: 767px) {
-    #inner-container {
-      grid-template-columns: 1fr; /* 1列にスタック */
-    }
-
-    .border {
-      display: none; /* ボーダーを非表示に */
-    }
-
-    .main,
-    .sidebar {
-      width: auto; /* 横幅いっぱいに広げる */
-    }
-  }
 `;
 
 export default createRoute((c) => {
@@ -51,15 +17,9 @@ export default createRoute((c) => {
     <div class={className}>
       <MainNav />
       <Header />
-      <div class="container">
-        <div id="inner-container">
-          <div class="main">メインコンテンツ</div>
-          <div class="border"></div>
-          <div class="sidebar">
-            <SideBar />
-          </div>
-        </div>
-      </div>
+      <Info />
+      <Detail />
+      <GeejukuMap />
       <Footer />
     </div>,
     { title: "ぎーじゅく@渋谷、新宿を拠点としたギークハウス" }

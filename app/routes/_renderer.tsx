@@ -1,6 +1,7 @@
-import { Style, css } from "hono/css";
+import { Style } from "hono/css";
 import { jsxRenderer } from "hono/jsx-renderer";
 import { Script } from "honox/server";
+import styles from "../style.css?url";
 
 export default jsxRenderer(({ children, title }) => {
   return (
@@ -13,7 +14,6 @@ export default jsxRenderer(({ children, title }) => {
 
         <link href="/static/bootstrap.min.css" rel="stylesheet" />
         <link rel="icon" href="/static/favicon.jpg" type="image/jpeg" />
-
         <link
           href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
           rel="stylesheet"
@@ -29,6 +29,7 @@ export default jsxRenderer(({ children, title }) => {
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
         />
 
+        <link href={styles} rel="stylesheet" />
         <Script src="/app/client.ts" async />
         <Style />
       </head>

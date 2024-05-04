@@ -13,14 +13,6 @@ export default defineConfig(({ mode }) => {
   if (mode === "client") {
     return {
       plugins: [client()],
-      build: {
-        rollupOptions: {
-          input: ["/app/style.css"],
-          output: {
-            assetFileNames: "static/assets/[name].[ext]",
-          },
-        },
-      },
     };
   } else {
     return {

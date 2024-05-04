@@ -16,17 +16,17 @@ export default function Header() {
           -moz-background-size: cover;
           background-size: cover;
           -o-background-size: cover;
-          min-height: 300px;
+          min-height: 260px;
         }
 
         @media (min-width: 768px) {
           header {
-            min-height: 690px;
+            min-height: 260px;
           }
         }
 
         #shinjuku {
-          background-image: url(/static/assets/header-geejuku.jpg);
+          background-image: url(/static/assets/header-geejuku2.png);
         }
       `}</Style>
       <div class="header-content">
