@@ -18,6 +18,14 @@ export default defineConfig(({ mode }) => {
     return {
       build: {
         emptyOutDir: false,
+        build: {
+          rollupOptions: {
+            input: ["/app/style.css"],
+            output: {
+              assetFileNames: "static/assets/[name].[ext]",
+            },
+          },
+        },
       },
       plugins: [
         honox(),
