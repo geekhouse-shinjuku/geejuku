@@ -1,32 +1,17 @@
 import { css } from "hono/css";
 import { createRoute } from "honox/factory";
-import MainNav from "../islands/main-nav";
-import Header from "../islands/header";
-import Footer from "../islands/footer";
+import MainNav from "../components/main-nav";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import { FC } from "hono/jsx";
-import { SideBar } from "../islands/sidebar";
+import { SideBar } from "../components/sidebar";
 
 const className = css`
-  font-family: sans-serif;
-
   #inner-container {
     display: grid;
-    grid-template-columns: 680px 6px 320px;
+    grid-template-columns: 720px 6px 320px;
     gap: 10px;
     margin: 0 auto;
-  }
-
-  .main {
-    background-color: lightblue;
-    padding: 20px;
-  }
-
-  .border {
-    border-left: 1px solid black;
-  }
-
-  .sidebar {
-    padding: 20px;
   }
 
   /* スマートフォン向けのスタイル */
@@ -53,9 +38,20 @@ export default createRoute((c) => {
       <Header />
       <div class="container">
         <div id="inner-container">
-          <div class="main">メインコンテンツ</div>
-          <div class="border"></div>
-          <div class="sidebar">
+          <div class="main px-6">
+            <div class="main-about">
+              <h1 class="text-2xl font-bold pt-12 pb-2">
+                ギークハウス新宿について
+              </h1>
+              <p>
+                広いリビングと好立地を活かしてイベントが多いです。勉強会、もくもく会、食べ物イベントなど。交流が好きな人にオススメ
+              </p>
+            </div>
+            <h2 class="pt-12 text-2xl font-bold">最新記事</h2>
+            <Posts />
+          </div>
+          <div class="my-6 border-l border-gray-200"></div>
+          <div class="sidebar px-4">
             <SideBar />
           </div>
         </div>
@@ -75,21 +71,19 @@ const Posts: FC = () => {
   );
 
   return (
-    <div class="mt-16">
-      <ul class="mt-10">
-        {entries.map(([id, module]) => (
-          <li class="text-lg mt-2 md:mt-1">
-            <span class="tabular-nums tnum">{module.frontmatter.date}: </span>
-            <br class="block md:hidden" />
-            <a
-              class="text-blue-600 underline"
-              href={`${id.replace(/\.mdx$/, "")}`}
-            >
-              {module.frontmatter.title}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul class="mt-4">
+      {entries.map(([id, module]) => (
+        <li class="text-lg mt-2 md:mt-1">
+          <span class="tabular-nums tnum">{module.frontmatter.date}: </span>
+          <br class="block md:hidden" />
+          <a
+            class="text-blue-600 underline"
+            href={`${id.replace(/\.mdx$/, "")}`}
+          >
+            {module.frontmatter.title}
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 };

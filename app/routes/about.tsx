@@ -1,11 +1,11 @@
 import { css } from "hono/css";
 import { createRoute } from "honox/factory";
-import MainNav from "../islands/main-nav";
-import Header from "../islands/header";
-import Info from "../islands/info";
-import Detail from "../islands/detail";
-import GeejukuMap from "../islands/geejuku-map";
-import Footer from "../islands/footer";
+import MainNav from "../components/main-nav";
+import Header from "../components/header";
+import Info from "../components/info";
+import Detail from "../components/detail";
+import GeejukuMap from "../components/geejuku-map";
+import Footer from "../components/footer";
 import { FC } from "hono/jsx";
 
 const className = css`
