@@ -179,22 +179,34 @@ export default function SnsButtons() {
       `}</Style>
       <div class="text-center contact">
         <a href="mailto:geejuku@kemari.tokyo" target="_blank">
-          <button type="button" class="btn btn-block btn-success">
+          <button
+            type="button"
+            class="align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline block w-full bg-green-600 text-white hover:green-700"
+          >
             お問い合わせ
           </button>
         </a>
         <a href="https://twitter.com/geejuku" target="_blank">
-          <button type="button" class="btn btn-block btn-twitter">
+          <button
+            type="button"
+            class="align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline block w-full btn-twitter"
+          >
             Twitter
           </button>
         </a>
         <a href="https://www.facebook.com/geejuku/" target="_blank">
-          <button type="button" class="btn btn-block btn-facebook">
+          <button
+            type="button"
+            class="align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline block w-full btn-facebook"
+          >
             Facebook
           </button>
         </a>
         <a href="https://geejuku.connpass.com/" target="_blank">
-          <button type="button" class="btn btn-block btn-connpass">
+          <button
+            type="button"
+            class="align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline block w-full btn-connpass"
+          >
             イベント情報(connpass)
           </button>
         </a>

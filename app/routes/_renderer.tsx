@@ -12,7 +12,6 @@ export default jsxRenderer(({ children, title }) => {
         <meta robots="noindex, nofollow" />
         <title>{title}</title>
 
-        <link href="/static/bootstrap.min.css" rel="stylesheet" />
         <link rel="icon" href="/static/favicon.jpg" type="image/jpeg" />
         <link
           href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
@@ -34,8 +33,6 @@ export default jsxRenderer(({ children, title }) => {
         <Style />
       </head>
       <body>{children}</body>
-      <script src="/static/jquery.js" />
-      <script src="/static/bootstrap.min.js" />
     </html>
   );
 });

@@ -14,7 +14,9 @@ export default function GeejukuMap() {
       `}</Style>
       <div id="map"></div>
       <div class="map-card">
-        <div class="text-center">ぎーじゅく（ギークハウス新宿）</div>
+        <div class="text-xl font-medium text-center py-2">
+          ぎーじゅく（ギークハウス新宿）
+        </div>
         <div class="text-center text-muted">
           JR新宿駅 南口から徒歩7分
           <br /> JR、大江戸線代々木駅から歩いて8分

@@ -1,4 +1,5 @@
 import SnsButtons from "./contact-buttons";
+import GeejukuMap from "./geejuku-map";
 
 export const SideBar = () => {
   return (
@@ -16,8 +17,7 @@ export const SideBar = () => {
       <SnsButtons />
 
       <div class="flex flex-col">
-        <hr />
-        <h3 class="h4 text-muted">物件内容</h3>
+        <h3 class="text-xl font-medium pt-4 pb-2">物件内容</h3>
         <div>
           間取り： <strong>5LDK</strong>
         </div>
@@ -53,7 +53,7 @@ export const SideBar = () => {
 
       <div class="flex flex-col pt-4">
         <hr />
-        <h3 class="h4 text-muted">アメニティ・設備</h3>
+        <h3 class="text-xl font-medium pt-4 pb-2">アメニティ・設備</h3>
         <div>
           <i class="fa fa-lg fa-wifi"></i> ワイヤレスインターネット
         </div>
@@ -82,7 +82,7 @@ export const SideBar = () => {
 
       <div class="flex flex-col pt-4">
         <hr />
-        <h3 class="h4 text-muted">料金</h3>
+        <h3 class="text-xl font-medium pt-4 pb-2">料金</h3>
         <div>
           ドミトリー家賃 :<strong>60,000円</strong>
         </div>
@@ -111,8 +111,7 @@ export const SideBar = () => {
       </div>
       <div class="flex flex-col pt-4">
         <hr />
-        <h3 class="h4 text-muted">必須要件</h3>
-        <div>DQNでない</div>
+        <h3 class="text-xl font-medium pt-4 pb-2">必須要件</h3>
         <div>家賃を滞納せず払える</div>
         <div>基本的なマナーが守れる</div>
         <div>運営に協力できる</div>
@@ -126,7 +125,7 @@ export const SideBar = () => {
       </div>
       <div class="flex flex-col pt-4">
         <hr />
-        <h3 class="h4 text-muted">推奨要件</h3>
+        <h3 class="text-xl font-medium pt-4 pb-2">推奨要件</h3>
         <div>たばこを吸わない</div>
         <div>インターネットが好き</div>
         <div>IT関係の仕事、学校、趣味</div>
@@ -136,6 +135,8 @@ export const SideBar = () => {
         <div>料理好き</div>
         <div>ギークっぽい何かの能力がある</div>
       </div>
+      <hr />
+      <GeejukuMap />
     </div>
   );
 };
