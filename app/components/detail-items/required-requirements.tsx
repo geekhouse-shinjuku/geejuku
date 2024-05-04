@@ -6,7 +6,6 @@ export default function RequiredRequirements() {
       </div>
       <div class="md:w-3/4 flex flex-wrap pr-4 pl-4">
         <div class="md:w-1/2">
-          <div class="pr-4 pl-4">DQNでない</div>
           <div class="pr-4 pl-4">基本的なマナーが守れる</div>
           <div class="pr-4 pl-4">Facebook/Twitter/Gmailが使える</div>
           <div class="pr-4 pl-4">

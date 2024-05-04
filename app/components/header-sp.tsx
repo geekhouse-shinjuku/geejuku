@@ -1,6 +1,6 @@
 export default function HeaderSp() {
   return (
-    <header class="flex items-center min-h-auto px-4 justify-between">
+    <header class="flex items-center min-h-auto px-4 justify-between pt-6">
       <div class="flex items-center">
         <img
           src="/static/assets/geejuku-logo.jpg"
