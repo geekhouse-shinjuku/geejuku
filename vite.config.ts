@@ -16,17 +16,6 @@ export default defineConfig(({ mode }) => {
     };
   } else {
     return {
-      build: {
-        emptyOutDir: false,
-        build: {
-          rollupOptions: {
-            input: ["/app/style.css"],
-            output: {
-              assetFileNames: "static/assets/[name].[ext]",
-            },
-          },
-        },
-      },
       plugins: [
         honox(),
         pages(),
@@ -35,8 +24,11 @@ export default defineConfig(({ mode }) => {
           remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
           rehypePlugins: [rehypeHighlight],
         }),
-        ssg({ entry }),
       ],
+      build: {
+        assetsDir: "static",
+        ssrEmitAssets: true,
+      },
     };
   }
 });
