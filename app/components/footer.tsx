@@ -1,34 +1,10 @@
-import { Style, css } from "hono/css";
-
 export default function Footer() {
   return (
-    <footer>
-      <Style>{css`
-        footer {
-          padding: 50px 0;
-          background-color: #2b2d2e;
-          color: #fff;
-        }
-
-        footer .h4 {
-          margin-top: 0;
-        }
-        footer a,
-        footer a:hover,
-        footer a:visited {
-          color: #fff;
-        }
-
-        footer a:hover {
-          text-decoration: none;
-          opacity: 0.5;
-        }
-      `}</Style>
-      <div class="container">
-        <div class="row pb-12">
-          <div class="col-lg-3"></div>
-          <div class="col-lg-3">
-            <h3 class="h4">ギークハウスプロジェクト</h3>
+    <footer class="py-12 bg-dark text-white">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-center py-6">
+          <div class="md:w-1/3">
+            <h3 class="text-xl font-meidum py-3">ギークハウスプロジェクト</h3>
             <ul class="list-unstyled">
               <li>
                 <a href="https://geekhouse.tumblr.com/" target="_blank">
@@ -58,8 +34,8 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="col-lg-3">
-            <h3 class="h4">ときさば系物件(都内)</h3>
+          <div>
+            <h3 class="text-xl font-meidum py-3">ときさば系物件(都内)</h3>
             <ul class="list-unstyled">
               <li>
                 <a
@@ -88,10 +64,10 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <hr class="py-4" />
-        <div class="row">
-          <h3 class="h4 text-center">連絡先</h3>
-          <ul class="list-unstyled list-inline text-center">
+        <hr class="py-6" />
+        <div>
+          <h3 class="text-xl text-center py-2">連絡先</h3>
+          <ul class="list-unstyled list-inline text-center flex justify-center">
             <li>
               <a href="https://twitter.com/geejuku" target="_blank">
                 <span class="fa-stack fa-lg">
@@ -110,7 +86,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div class="row text-center text-muted">
+        <div class="py-5 text-center text-zinc-500">
           &copy; ぎーじゅく@渋谷・新宿のシェアハウス
         </div>
       </div>
