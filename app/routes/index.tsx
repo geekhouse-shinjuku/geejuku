@@ -41,7 +41,7 @@ export default createRoute((c) => {
 const Posts: FC = () => {
   const posts = import.meta.glob<{
     frontmatter: { title: string; date: string; published: boolean };
-  }>("./posts/*.mdx", { eager: true });
+  }>("./posts/*/*.mdx", { eager: true });
   const entries = Object.entries(posts).filter(
     ([_, module]) => module.frontmatter.published
   );
