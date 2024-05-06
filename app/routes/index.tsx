@@ -47,7 +47,7 @@ export default createRoute((c) => {
                 広いリビングと好立地を活かしてイベントが多いです。勉強会、もくもく会、食べ物イベントなど。交流が好きな人にオススメ
               </p>
             </div>
-            <h2 class="pt-12 text-2xl font-bold">最新記事</h2>
+            <h2 class="pt-12 text-2xl font-bold">ブログ記事</h2>
             <Posts />
           </div>
           <div class="my-6 border-l border-gray-200"></div>
