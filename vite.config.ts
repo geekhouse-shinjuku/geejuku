@@ -1,5 +1,4 @@
 import pages from "@hono/vite-cloudflare-pages";
-import ssg from "@hono/vite-ssg";
 import mdx from "@mdx-js/rollup";
 import honox from "honox/vite";
 import client from "honox/vite/client";
@@ -7,7 +6,7 @@ import rehypeHighlight from "rehype-highlight";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import { defineConfig } from "vite";
-const entry = "./app/server.ts";
+import ssg from "@hono/vite-ssg";
 
 export default defineConfig(({ mode }) => {
   if (mode === "client") {
@@ -17,6 +16,7 @@ export default defineConfig(({ mode }) => {
   } else {
     return {
       plugins: [
+        ssg(),
         honox(),
         pages(),
         mdx({
