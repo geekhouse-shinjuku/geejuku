@@ -7,6 +7,7 @@ import remarkFrontmatter from "remark-frontmatter";
 import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import { defineConfig } from "vite";
 import ssg from "@hono/vite-ssg";
+const entry = "./app/server.ts";
 
 export default defineConfig(({ mode }) => {
   if (mode === "client") {
@@ -16,7 +17,7 @@ export default defineConfig(({ mode }) => {
   } else {
     return {
       plugins: [
-        ssg(),
+        ssg({ entry }),
         honox(),
         pages(),
         mdx({
