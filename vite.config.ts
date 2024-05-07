@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => {
       plugins: [client()],
       build: {
         rollupOptions: {
-          input: ["/app/style.css"],
+          input: ["./app/style.css"],
           output: {
             assetFileNames: "static/assets/[name].[ext]",
           },
@@ -27,7 +27,7 @@ export default defineConfig(({ mode }) => {
       plugins: [
         ssg({ entry }),
         honox(),
-        pages({ entry }),
+        pages(),
         mdx({
           jsxImportSource: "hono/jsx",
           remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
