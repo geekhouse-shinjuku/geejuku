@@ -4,7 +4,7 @@
 
 Hono + vite + Cloudflare Pagesでホスティングしています。
 
-### 予定地
+### ウェブサイト
 [ぎーじゅく@渋谷・新宿のシェアハウス](https://blog.geejuku.tokyo)
 
 ### Cloudflare Pages
