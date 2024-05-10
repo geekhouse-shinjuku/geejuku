@@ -54,7 +54,11 @@ function generatePost() {
         const date = new Date().toISOString().slice(0, 10).replace(/-/g, "/");
         filename = `generated-post-${date.replace(/\//g, "-")}.mdx`;
       } else {
-        filename = `${inputPath}.mdx`;
+        if (!inputPath.endsWith(".mdx") || !inputPath.endsWith(".md")) {
+          filename = `${inputPath}.mdx`;
+        } else {
+          filename = inputPath;
+        }
       }
       writePost(title, description, filename);
     });
