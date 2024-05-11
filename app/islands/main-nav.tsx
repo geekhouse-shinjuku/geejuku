@@ -13,7 +13,7 @@ export default function MainNav() {
     <nav class="bg-white text-zinc-500 p-4 fixed w-full z-50 border-b">
       <div class="container mx-auto flex justify-between items-center">
         <div class="text-lg text-zinc-500">
-          <a href="/">ぎーじゅく@渋谷・新宿のシェアハウス</a>
+          <a href="/">ぎーじゅくブログ</a>
         </div>
         <div class={`hidden md:flex space-x-4`}>
           <a href="/" class="hover:text-zinc-300">
