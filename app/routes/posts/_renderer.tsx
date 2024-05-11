@@ -1,5 +1,6 @@
 import { jsxRenderer } from "hono/jsx-renderer";
 import MainNav from "../../islands/main-nav";
+import ShareX from "../../components/button-share-x";
 import Header from "../../components/header";
 import { SideBar } from "../../components/sidebar";
 import Footer from "../../components/footer";
@@ -23,6 +24,7 @@ export default jsxRenderer(({ children, Layout, frontmatter }) => {
             <div class="main px-6 py-12">
               <div class="text-zinc-500">{frontmatter?.date} </div>
               <div class="markdown">{children}</div>
+              <ShareX />
             </div>
             <div class="my-6 border-l border-zinc-200"></div>
             <div class="sidebar px-4">
