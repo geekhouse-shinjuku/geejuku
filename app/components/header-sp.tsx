@@ -12,7 +12,7 @@ export default function HeaderSp() {
           <div class="text-zinc-500 text-base">（ギークハウス新宿）</div>
         </div>
       </div>
-      <div class="w-fit">
+      {/* <div class="w-fit">
         <a href="mailto:geejuku@kemari.tokyo" target="_blank">
           <button
             type="button"
@@ -21,7 +21,7 @@ export default function HeaderSp() {
             お問い合わせ
           </button>
         </a>
-      </div>
+      </div> */}
     </header>
   );
 }
