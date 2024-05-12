@@ -231,14 +231,14 @@ export default function SnsButtons() {
         }
       `}</Style>
       <div class="text-center contact">
-        <a href="mailto:geejuku@kemari.tokyo" target="_blank">
+        {/*<a href="mailto:geejuku@kemari.tokyo" target="_blank">
           <button
             type="button"
             class="align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline block w-full bg-green-600 text-white hover:green-700"
           >
             お問い合わせ
           </button>
-        </a>
+        </a> */}
         <a href="https://twitter.com/geejuku" target="_blank">
           <button
             type="button"
@@ -272,7 +272,7 @@ export default function SnsButtons() {
           </button>
         </a>
         <p class="text-red-500">
-          <small><u>※可能であれば問い合わせはXのDMでお願い致します </u></small>
+          <small><u>※問い合わせはXのDMでお願い致します </u></small>
         </p>
       </div>
     </section>
