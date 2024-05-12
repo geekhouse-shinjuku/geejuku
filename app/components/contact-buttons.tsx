@@ -6,55 +6,55 @@ export default function SnsButtons() {
         .sns-buttons {
           padding: 1em 0;
 
-          .btn-twitter {
+          .btn-x {
             border-color: #55acee;
             color: #fff;
-            background-color: #55acee;
+            background-color: #000000;
             -webkit-transition: all 0.35s;
             -moz-transition: all 0.35s;
             transition: all 0.35s;
           }
 
-          .btn-twitter:hover,
-          .btn-twitter:focus,
-          .btn-twitter.focus,
-          .btn-twitter:active,
-          .btn-twitter.active,
-          .open > .dropdown-toggle.btn-twitter {
+          .btn-x:hover,
+          .btn-x:focus,
+          .btn-x.focus,
+          .btn-x:active,
+          .btn-x.active,
+          .open > .dropdown-toggle.btn-x {
             border-color: #55acee;
             color: #fff;
-            background-color: #489fe1;
+            background-color: #36454F;
           }
 
-          .btn-twitter:active,
-          .btn-twitter.active,
-          .open > .dropdown-toggle.btn-twitter {
+          .btn-x:active,
+          .btn-x.active,
+          .open > .dropdown-toggle.btn-x {
             background-image: none;
           }
 
-          .btn-twitter.disabled,
-          .btn-twitter[disabled],
-          fieldset[disabled] .btn-twitter,
-          .btn-twitter.disabled:hover,
-          .btn-twitter[disabled]:hover,
-          fieldset[disabled] .btn-twitter:hover,
-          .btn-twitter.disabled:focus,
-          .btn-twitter[disabled]:focus,
-          fieldset[disabled] .btn-twitter:focus,
-          .btn-twitter.disabled.focus,
-          .btn-twitter[disabled].focus,
-          fieldset[disabled] .btn-twitter.focus,
-          .btn-twitter.disabled:active,
-          .btn-twitter[disabled]:active,
-          fieldset[disabled] .btn-twitter:active,
-          .btn-twitter.disabled.active,
-          .btn-twitter[disabled].active,
-          fieldset[disabled] .btn-twitter.active {
+          .btn-x.disabled,
+          .btn-x[disabled],
+          fieldset[disabled] .btn-x,
+          .btn-x.disabled:hover,
+          .btn-x[disabled]:hover,
+          fieldset[disabled] .btn-x:hover,
+          .btn-x.disabled:focus,
+          .btn-x[disabled]:focus,
+          fieldset[disabled] .btn-x:focus,
+          .btn-x.disabled.focus,
+          .btn-x[disabled].focus,
+          fieldset[disabled] .btn-x.focus,
+          .btn-x.disabled:active,
+          .btn-x[disabled]:active,
+          fieldset[disabled] .btn-x:active,
+          .btn-x.disabled.active,
+          .btn-x[disabled].active,
+          fieldset[disabled] .btn-x.active {
             border-color: #55acee;
             background-color: #55acee;
           }
 
-          .btn-twitter .badge {
+          .btn-x .badge {
             color: #55acee;
             background-color: #fff;
           }
@@ -189,9 +189,9 @@ export default function SnsButtons() {
         <a href="https://twitter.com/geejuku" target="_blank">
           <button
             type="button"
-            class="align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline block w-full btn-twitter"
+            class="align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline block w-full btn-x"
           >
-            Twitter
+            X
           </button>
         </a>
         <a href="https://www.facebook.com/geejuku/" target="_blank">
@@ -210,6 +210,9 @@ export default function SnsButtons() {
             イベント情報(connpass)
           </button>
         </a>
+        <p class="text-red-500">
+          <small><u>※可能であれば問い合わせはXのDMでお願い致します </u></small>
+        </p>
       </div>
     </section>
   );
