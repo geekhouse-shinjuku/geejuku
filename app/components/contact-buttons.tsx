@@ -272,7 +272,7 @@ export default function SnsButtons() {
           </button>
         </a>
         <p class="text-red-500">
-          <small><u>※お問い合わせはXのDMでお願い致します </u></small>
+          <small><u>※　お問い合わせはXのDMでお願い致します </u></small>
         </p>
       </div>
     </section>
