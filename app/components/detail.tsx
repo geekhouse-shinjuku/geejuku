@@ -12,7 +12,7 @@ export default function Detail() {
           <div class="px-4">
             <h2 class="text-3xl text-zinc-500">ギークハウス新宿について</h2>
             <p class="text-zinc-900 py-2 text-base">
-              広いリビングと好立地を活かしてイベントが多いです。勉強会、もくもく会、食べ物イベントなど。交流が好きな人にオススメ
+              広いリビングと好立地を活かしてイベントが多いです。勉強会、もくもく会、食べ物イベントなど。交流が好きな人におすすめです！
             </p>
           </div>
           <div class="px-4">
