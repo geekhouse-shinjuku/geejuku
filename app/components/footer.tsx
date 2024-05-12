@@ -13,7 +13,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://geekhouse.tumblr.com/post/82283493603/"
+                  href="https://geekhouse.github.io/rooms/"
                   target="_blank"
                 >
                   入居者募集
@@ -34,7 +34,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h3 class="text-xl font-meidum py-3">ときさば系物件(都内)</h3>
             <ul class="list-unstyled">
               <li>
@@ -62,7 +62,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <hr class="py-6" />
         <div>
