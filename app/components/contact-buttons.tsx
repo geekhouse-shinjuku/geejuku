@@ -175,6 +175,59 @@ export default function SnsButtons() {
             color: #3b5998;
             background-color: #fff;
           }
+
+        .btn-meetup {
+            border-color: #c23123;
+            color: #fff;
+            background-color: #FF003F;
+            -webkit-transition: all 0.35s;
+            -moz-transition: all 0.35s;
+            transition: all 0.35s;
+          }
+
+          .btn-meetup:hover,
+          .btn-meetup:focus,
+          .btn-meetup.focus,
+          .btn-meetup:active,
+          .btn-meetup.active,
+          .open > .dropdown-toggle.btn-meetup {
+            border-color: #a32a1b;
+            color: #fff;
+            background-color: #ED1C40;
+          }
+
+          .btn-meetup:active,
+          .btn-meetup.active,
+          .open > .dropdown-toggle.btn-meetup {
+            background-image: none;
+          }
+
+          .btn-meetup.disabled,
+          .btn-meetup[disabled],
+          fieldset[disabled] .btn-meetup,
+          .btn-meetup.disabled:hover,
+          .btn-meetup[disabled]:hover,
+          fieldset[disabled] .btn-meetup:hover,
+          .btn-meetup.disabled:focus,
+          .btn-meetup[disabled]:focus,
+          fieldset[disabled] .btn-meetup:focus,
+          .btn-meetup.disabled.focus,
+          .btn-meetup[disabled].focus,
+          fieldset[disabled] .btn-meetup.focus,
+          .btn-meetup.disabled:active,
+          .btn-meetup[disabled]:active,
+          fieldset[disabled] .btn-meetup:active,
+          .btn-meetup.disabled.active,
+          .btn-meetup[disabled].active,
+          fieldset[disabled] .btn-meetup.active {
+            border-color: #a32a1b;
+            background-color: #a32a1b;
+          }
+
+          .btn-meetup .badge {
+            color: #3b5998;
+            background-color: #fff;
+          }
         }
       `}</Style>
       <div class="text-center contact">
@@ -207,7 +260,15 @@ export default function SnsButtons() {
             type="button"
             class="align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline block w-full btn-connpass"
           >
-            イベント情報(connpass)
+            勉強会(Connpass)
+          </button>
+        </a>
+        <a href="https://geejuku.connpass.com/" target="_blank">
+          <button
+            type="button"
+            class="align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline block w-full btn-meetup"
+          >
+            交流会(Meetup)
           </button>
         </a>
         <p class="text-red-500">
