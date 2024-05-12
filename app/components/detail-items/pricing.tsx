@@ -13,7 +13,7 @@ export default function Pricing() {
             デポジット：
             <strong>60,000円</strong>
           </div>
-          <div class="pr-4 pl-4">
+          {/* <div class="pr-4 pl-4">
             割引：
             <strong
               data-toggle="tooltip"
@@ -22,7 +22,7 @@ export default function Pricing() {
             >
               ギーク割引5,000円
             </strong>
-          </div>
+          </div> */}
         </div>
         <div class="md:w-1/2">
           <div class="pr-4 pl-4">

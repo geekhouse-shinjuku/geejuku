@@ -98,7 +98,7 @@ export const SideBar = () => {
           退去時クリーニング代：
           <strong>5,000円</strong>
         </div>
-        <div>
+        {/* <div>
           割引：
           <strong
             data-toggle="tooltip"
@@ -107,7 +107,7 @@ export const SideBar = () => {
           >
             ギーク割引5,000円
           </strong>
-        </div>
+        </div> */}
       </div>
       <div class="flex flex-col pt-4">
         <hr />
