@@ -17,7 +17,7 @@ export default function MainNav() {
         </div>
         <div class={`hidden md:flex space-x-4`}>
           <a href="/" class="hover:text-zinc-300">
-            ブログ
+            記事一覧
           </a>
           <a href="/about" class="hover:text-zinc-300">
             このギークハウスについて
@@ -29,7 +29,7 @@ export default function MainNav() {
       </div>
       <div class={`${isOpen ? "block" : "hidden"} md:hidden pt-4`}>
         <a href="/" class="block hover:bg-zinc-700 p-2">
-          ブログ
+          記事一覧
         </a>
         <a href="/about" class="block hover:bg-zinc-700 p-2">
           このギークハウスについて
