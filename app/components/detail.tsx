@@ -14,6 +14,14 @@ export default function Detail() {
             <p class="text-zinc-900 py-2 text-base">
               広いリビングと好立地を活かしてイベントが多いです。勉強会、もくもく会、食べ物イベントなど。交流が好きな人におすすめです！
             </p>
+            <p class="mt-5">
+              <span><b>公式サイト：</b></span>
+              <span>
+                <a href="https://geejuku.tokyo" target="_blank" class="text-blue-500 hover:text-blue-700">
+                  ぎーじゅく@渋谷・新宿のシェアハウス
+                </a>
+              </span>
+            </p>
           </div>
           <div class="px-4">
             <PropertyDetail />
