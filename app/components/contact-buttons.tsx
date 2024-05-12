@@ -9,7 +9,7 @@ export default function SnsButtons() {
           .btn-x {
             border-color: #55acee;
             color: #fff;
-            background-color: #000000;
+            background-color: #36454F;
             -webkit-transition: all 0.35s;
             -moz-transition: all 0.35s;
             transition: all 0.35s;
@@ -23,7 +23,7 @@ export default function SnsButtons() {
           .open > .dropdown-toggle.btn-x {
             border-color: #55acee;
             color: #fff;
-            background-color: #36454F;
+            background-color: #000000;
           }
 
           .btn-x:active,
