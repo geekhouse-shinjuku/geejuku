@@ -9,7 +9,6 @@ export default jsxRenderer(({ children, title }) => {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta robots="noindex, nofollow" />
         <title>{title}</title>
 
         <link rel="icon" href="/static/favicon.jpg" type="image/jpeg" />
