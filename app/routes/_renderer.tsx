@@ -2,11 +2,13 @@ import { Style } from "hono/css";
 import { jsxRenderer } from "hono/jsx-renderer";
 import { Script } from "honox/server";
 import styles from "../style.css?url";
+import { html } from "hono/html";
 
 export default jsxRenderer(({ children, title }) => {
   return (
     <html lang="jp">
       <head>
+        {import.meta.env.PROD ? <GoogleAnalytics /> : null}
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title}</title>
@@ -35,3 +37,25 @@ export default jsxRenderer(({ children, title }) => {
     </html>
   );
 });
+
+const GoogleAnalytics = () => {
+  return (
+    <>
+      {html`
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-7W7F0X6LN5"
+        />
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+
+          gtag("config", "G-7W7F0X6LN5");
+        </script>
+      `}
+    </>
+  );
+};
