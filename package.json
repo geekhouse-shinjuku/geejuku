@@ -17,11 +17,15 @@
   "private": true,
   "dependencies": {
     "@mdx-js/rollup": "^3.0.1",
+    "@resvg/resvg-wasm": "2.4.0",
     "highlight.js": "^11.9.0",
     "hono": "^4.0.9",
     "honox": "^0.1.9",
+    "just-camel-case": "^6.2.0",
     "remark-frontmatter": "^5.0.0",
-    "remark-mdx-frontmatter": "^4.0.0"
+    "remark-mdx-frontmatter": "^4.0.0",
+    "satori": "^0.10.13",
+    "yoga-wasm-web": "^0.3.3"
   },
   "devDependencies": {
     "@biomejs/biome": "1.6.4",
