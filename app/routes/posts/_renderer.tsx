@@ -7,10 +7,14 @@ import Footer from "../../components/footer";
 import HeaderSp from "../../components/header-sp";
 
 export default jsxRenderer(({ children, Layout, frontmatter }) => {
-  const _title = `${frontmatter?.title} | Blog Name`;
+  const _title = `${frontmatter?.title}`;
 
   return (
-    <Layout title={_title} description={frontmatter?.description}>
+    <Layout
+      title={_title}
+      description={frontmatter?.description}
+      ogImage={frontmatter?.ogImage}
+    >
       <MainNav />
       <div class="pt-14">
         <div class="hidden md:block">

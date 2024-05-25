@@ -4,14 +4,31 @@ import { Script } from "honox/server";
 import styles from "../style.css?url";
 import { html } from "hono/html";
 
-export default jsxRenderer(({ children, title }) => {
+export default jsxRenderer(({ children, title, ogImage }) => {
+  const hostUrl = import.meta.env.PROD
+    ? "https://blog.geejuku.tokyo/"
+    : "http://localhost:5173/";
+  const ogImgTitle = title ? encodeURIComponent(title) : "";
+  const ogTitle = title
+    ? title + " | ぎーじゅく@渋谷、新宿を拠点としたギークハウス"
+    : "ぎーじゅく@渋谷、新宿を拠点としたギークハウス";
+  ogImage = ogImage ? ogImage : hostUrl + "api/ogimg?title=" + ogImgTitle;
   return (
     <html lang="jp">
       <head>
         {import.meta.env.PROD ? <GoogleAnalytics /> : null}
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title}</title>
+        <meta property="og:title" content={ogTitle} />
+        <meta property="og:image" content={ogImage} />
+        <meta
+          property="og:site_name"
+          content="ぎーじゅく@渋谷、新宿を拠点としたギークハウス"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={ogImage} />
+
+        <title>{ogTitle}</title>
 
         <link rel="icon" href="/static/favicon.jpg" type="image/jpeg" />
         <link
